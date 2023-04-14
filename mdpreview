@@ -777,7 +777,7 @@ if __name__ == "__main__":
 
     # Find the theme dir by trying some paths.
     bin_dir = os.path.join(os.path.dirname(os.path.realpath(sys.argv[0])))
-    print(bin_dir)
+    log.debug(bin_dir)
     theme_dirs = [
         os.path.join(bin_dir, 'themes'),
         os.path.realpath(os.path.join(bin_dir, '..', 'lib', 'mdpreview', 'themes'))
