@@ -1,4 +1,4 @@
 pyinotify
 requests
 markdown
-markdown-checklist
+pymdown-extensions

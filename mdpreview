@@ -13,6 +13,8 @@ import markdown
 import pyinotify
 from PyQt5.Qt import *
 from PyQt5 import QtCore
+from PyQt5.QtWebKitWidgets import QWebPage
+from PyQt5.QtWebKitWidgets import QWebView
 import requests
 import xml.etree.ElementTree as ET
 
@@ -199,7 +201,8 @@ class MDRenderer:
             'fenced_code',
             'toc',
             'tables',
-            'markdown_checklist.extension',
+            'pymdownx.tasklist',
+            'pymdownx.tilde',
             UrlizeExtension()
         ]
         md = markdown.Markdown(extensions=extensions)
